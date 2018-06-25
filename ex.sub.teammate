@@ -1,0 +1,11 @@
+$TTL	3600
+@	IN	SOA	dns.sub.likacs06g.me.	root. ( 20180423 1d 30m 1w 2h )
+
+@	IN	NS	dns.sub.likacs06g.me.
+@	IN	A	206.189.85.169
+
+dns	IN	A	206.189.85.169
+;ws	IN	A	206.189.85.169
+demo	IN	CNAME	ws
+
+

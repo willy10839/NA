@@ -1,0 +1,23 @@
+$TTL 3600
+
+@	IN	SOA	nctubababa.me.	root (
+			2018042410;
+			1800;
+			1800;
+			1728000;
+			1200;
+			)
+@	IN	A	206.189.85.169
+@	IN	NS	ns1.nctubababa.me.
+@	IN	NS	ns2.nctubababa.me.
+ns1	IN	A	206.189.85.169
+ns2	IN	A	206.189.85.169
+nctubababa.me.	IN	MX	10	nctubababa.me.
+@	IN	TXT	"v=spf1 ip4:206.189.85.169 a mx -all"
+;mail.nctubababa.me.	IN	A	206.189.85.169
+mail._domainkey IN      TXT     ( "v=DKIM1; k=rsa; t=y; "
+          "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyxb/S94DErdCltr6Vfg9PNq2xZqVNnnfrv8VYUYcP9EqpvdtCST5OJvcEf54+WI7p6d003QihVpI8urPW9Cpj1T7b0ui0zEht8+KnNAKwjSranc35ij8/QKYCGIDIf4bS8F7BV/sCdVJWrDqu5AJ1ZD7IY7cwFhS5vcs6/xB/qQIDAQAB" )  ; ----- DKIM key mail for nctubababa.me
+_dmarc	IN 	TXT 	"v=DMARC1; p=none; rua=mailto:postmaster@nctubababa.me"
+sub	IN	NS	ns1.sub.nctubababa.me.
+ns1.sub	IN	A	159.65.142.20
+;;;gggg
